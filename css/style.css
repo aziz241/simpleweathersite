@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.main {
+  background-image: url(../img/bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  opacity: .95; }
+  .main__content {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem; }
+    .main__content--heading {
+      text-align: center;
+      text-transform: uppercase;
+      color: #c0aa2e;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 5px; }
+      .main__content--heading img {
+        height: 20rem; }
+  .main__weather {
+    text-align: center;
+    color: #fff; }
+    .main__weather--city {
+      font-size: 2.1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 1rem; }
+    .main__weather__search {
+      display: inline-block;
+      width: 15%; }
+      .main__weather__search--searchbar {
+        width: 100%; }
+
+.degreesgroup {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem; }
+  .degreesgroup span {
+    width: 100%; }
+
+#degree {
+  color: #3fff00; }
+
+#degreemin {
+  color: #00ffff; }
+
+#degreemax {
+  color: #ffb100; }

@@ -1,0 +1,5 @@
+// sass dosyaları
+
+sass/
+node_modules/
+*.json
