@@ -1,7 +1,7 @@
 "use strict";
 
 const url = "https://api.openweathermap.org/data/2.5/";
-const apikey = "edb6b0e06f311d0d4adc58872ffea78a";
+const apikey = "api key for openweathermap";
 
 
 const degree = document.getElementById("degree");
@@ -13,19 +13,16 @@ const city = document.getElementById("city");
 
 const searchbar = document.getElementById("searchbar");
 
-
-function setQuery(e) {
+const setQuery = (e) =>{
 
     if(e.keyCode == "13"){
 
         getResult(searchbar.value);
 
     }
+}
 
-  }
-
-function getResult(cityName) {
-
+const getResult = (cityName) =>{
     let query  = `${url}weather?q=${cityName}&appid=${apikey}&units=metric&lang=tr`;
     fetch(query)
     .then(weather => {
@@ -35,7 +32,8 @@ function getResult(cityName) {
       .then(displayResult)
 
 
-  }
+}
+
 
 const displayResult = (result) => {
 
